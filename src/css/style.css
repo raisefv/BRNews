@@ -1,0 +1,214 @@
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.body{
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    background-color: #363636;
+    padding: 12px 0;
+    position: relative;
+}
+
+.header__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Стили для блока с играми */
+.games {
+    display: flex;
+    gap: 8px;
+    order: 1;
+}
+
+.games img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.games img:hover {
+    opacity: 1;
+}
+
+/* Стили для поиска */
+.search {
+    flex-grow: 1;
+    max-width: 400px;
+    min-width: 120px;
+    margin: 0 20px;
+    order: 3;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #2a2a2a;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+.search-input::placeholder {
+    color: #aaaaaa;
+}
+
+/* Стили для навигации */
+.categories {
+    display: flex;
+    gap: 16px;
+    margin-right: 20px;
+    order: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.categories a {
+    color: #f6f6f6;
+    font-size: 16px;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+.categories a:hover {
+    color: #ffffff;
+}
+
+/* Стили для кнопки авторизации */
+.auth {
+    order: 4;
+}
+
+.auth img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.auth img:hover {
+    opacity: 1;
+}
+
+/* Мобильное меню */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    order: 5;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    gap: 12px;
+}
+
+.welcome-text{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+/* Медиазапросы для адаптива */
+@media (max-width: 1024px) {
+    .header__inner {
+        gap: 10px;
+    }
+
+    .categories {
+        gap: 12px;
+        margin-right: 10px;
+    }
+
+    .categories a {
+        font-size: 14px;
+    }
+
+    .search {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__inner {
+        justify-content: center;
+    }
+
+    .games {
+        order: 1;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+    }
+
+    .categories {
+        display: none;
+        order: 5;
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 0;
+        margin: 10px 0 0;
+        border-top: 1px solid #2a2a2a;
+    }
+
+    .categories.active {
+        display: flex;
+    }
+
+    .search {
+        order: 4;
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
+    .auth {
+        order: 3;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__inner {
+        padding: 0 10px;
+    }
+
+    .games img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .search-input {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .auth img {
+        width: 20px;
+        height: 20px;
+    }
+}
