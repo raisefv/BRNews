@@ -185,8 +185,8 @@
 }
 
 .upcoming-matches {
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 350px;
+    margin-left: 0;
     padding: 20px;
     font-family: 'Arial', sans-serif;
 }
