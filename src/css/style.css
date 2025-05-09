@@ -133,9 +133,9 @@
     margin: 0;
 }
 
-.breaking-news__info{
-    width: 650px;
-    height: 360px;
+.breaking-news__text {
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .breaking-news__image {
