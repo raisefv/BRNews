@@ -39,6 +39,11 @@
 .logo {
     width: 32px;
     height: auto;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 /* Стили для блока с играми */
