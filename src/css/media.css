@@ -104,6 +104,10 @@
         margin-right: 12px;
     }
 
+    .forum__top{
+        flex-direction: column;
+    }
+
     .footer-nav {
         gap: 16px;
     }
