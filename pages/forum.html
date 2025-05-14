@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRNews | Forum</title>
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="inter">
+
+<header class="header">
+    <div class="container header__inner">
+        <a href="/index.html"><img class="logo" src="/src/img/house.svg" alt=""></a>
+
+        <div class="games">
+            <a href="/pages/apex.html"><img src="/src/img/apex-icon.png" alt=""></a>
+            <a href="/pages/pubg.html"><img src="/src/img/pubg-icon.png" alt=""></a>
+            <a href="/pages/fortnite.html"><img src="/src/img/fortnite-icon.png" alt=""></a>
+        </div>
+
+        <button class="menu-toggle">☰</button>
+
+        <search class="search">
+            <input class="search-input" type="search" placeholder="Search..">
+        </search>
+
+        <div class="categories">
+            <a href="#" class="footer-link">Events</a>
+            <a href="#" class="footer-link">Teams</a>
+            <a href="#" class="footer-link">Transfers</a>
+            <a href="#" class="footer-link">Rankings</a>
+            <a href="#" class="footer-link">Stats</a>
+            <a href="/pages/forum.html" class="footer-link">Forum</a>
+        </div>
+
+        <div class="auth">
+            <a href="#"><img src="/src/icons/user.svg" alt=""></a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="message-modal">
+        <div class="message-modal__header">
+            <div class="message-modal__card">
+                <img class="message-modal__avatar" src="/src/img/97default_2022.webp" alt="Tournament">
+                <div class="message-modal__info">
+                    <span class="message-modal__title" id="modalThreadTitle">Заголовок</span>
+                    <span class="message-modal__author" id="modalThreadAuthor">Автор</span>
+                </div>
+            </div>
+            <button class="message-modal__close" id="messageModalClose">
+                <img src="/src/img/x.svg" alt="Close">
+            </button>
+        </div>
+        <div class="message-modal__content">
+            <div class="message-modal__text" id="modalThreadContent">Содержимое поста</div>
+        </div>
+    </div>
+
+    <div class="new-thread-modal" id="newThreadModal">
+        <div class="modal-header">
+            <div class="modal-title">New thread</div>
+            <button class="modal-close" id="modalCloseBtn">×</button>
+        </div>
+
+        <div class="input-group">
+            <label for="threadTitle">Title</label>
+            <input type="text" id="threadTitle" placeholder="Enter thread title">
+        </div>
+
+        <div class="input-group">
+            <label for="threadContent">Content</label>
+            <textarea id="threadContent" placeholder="Write your post here..."></textarea>
+        </div>
+
+        <div class="modal-actions">
+            <button class="btn btn-cancel" id="cancelBtn">Cancel</button>
+            <button class="btn btn-submit" id="postBtn">Post</button>
+        </div>
+    </div>
+
+    <div class="forum">
+
+        <div class="forum__top">
+            <search class="search">
+                <input class="search-input" type="search" placeholder="Search..">
+            </search>
+
+            <button type="button" class="new-thread" id="newThreadBtn">Start thread</button>
+        </div>
+
+        <div class="forum__list" id="threadsContainer">
+
+            <div class="table-card">
+                <img src="/src/img/97default_2022.webp" alt="Tournament" class="table-icon">
+                <div class="table-info">
+                    <span class="table-main-text">Tihon</span>
+                    <span class="table-secondary-text">By tihon</span>
+                </div>
+            </div>
+
+            <div class="table-card">
+                <img src="/src/img/97default_2022.webp" alt="Tournament" class="table-icon">
+                <div class="table-info">
+                    <span class="table-main-text">Tihon</span>
+                    <span class="table-secondary-text">By tihon</span>
+                </div>
+            </div>
+
+            <div class="table-card">
+                <img src="/src/img/97default_2022.webp" alt="Tournament" class="table-icon">
+                <div class="table-info">
+                    <span class="table-main-text">Tihon</span>
+                    <span class="table-secondary-text">By tihon</span>
+                </div>
+            </div>
+
+            <div class="table-card">
+                <img src="/src/img/97default_2022.webp" alt="Tournament" class="table-icon">
+                <div class="table-info">
+                    <span class="table-main-text">Tihon</span>
+                    <span class="table-secondary-text">By tihon</span>
+                </div>
+            </div>
+
+            <div class="table-card">
+                <img src="/src/img/97default_2022.webp" alt="Tournament" class="table-icon">
+                <div class="table-info">
+                    <span class="table-main-text">Tihon</span>
+                    <span class="table-secondary-text">By tihon</span>
+                </div>
+            </div>
+
+            <div class="table-card">
+                <img src="/src/img/97default_2022.webp" alt="Tournament" class="table-icon">
+                <div class="table-info">
+                    <span class="table-main-text">Tihon</span>
+                    <span class="table-secondary-text">By tihon</span>
+                </div>
+            </div>
+
+            <div class="table-card">
+                <img src="/src/img/97default_2022.webp" alt="Tournament" class="table-icon">
+                <div class="table-info">
+                    <span class="table-main-text">Tihon</span>
+                    <span class="table-secondary-text">By tihon</span>
+                </div>
+            </div>
+        </div>
+
+<div class="modal-overlay" id="modalOverlay"></div>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <nav class="footer-nav">
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Privacy policy</a>
+            <a href="#" class="footer-link">Terms</a>
+            <a href="#" class="footer-link">About us</a>
+        </nav>
+        <div class="footer-copyright">
+            © 2025 BRNews Esports. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<div class="modal-overlay"></div>
+</body>
+<script src="/script.js"></script>
+</html>
